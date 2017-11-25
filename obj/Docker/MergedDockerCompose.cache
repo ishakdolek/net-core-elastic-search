@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  netcoreelasticsearch:
+    build:
+      context: D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: netcoreelasticsearch
+    ports:
+    - 80/tcp
+version: '3.0'

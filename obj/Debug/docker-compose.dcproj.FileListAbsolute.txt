@@ -1,0 +1,1 @@
+D:\Projects\NetCore\netCoreElasticSearch\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
