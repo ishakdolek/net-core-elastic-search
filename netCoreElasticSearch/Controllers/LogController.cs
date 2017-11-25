@@ -27,7 +27,7 @@ namespace netCoreElasticSearch.Controllers
                 //.Source(f=>f.Includes(p2=>p2.Field(f2=>f2.message)))  
                 .Query(q => q
                     .MatchAll()
-                ).AllIndices()
+                ).AllIndices()//TODO
             );
             var result = new List<string>();
             foreach (var document in response.Documents)
