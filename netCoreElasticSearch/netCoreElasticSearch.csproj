@@ -6,6 +6,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Common\**" />
+    <Compile Remove="ControllerHandler\**" />
+    <Compile Remove="Model\**" />
+    <Content Remove="Common\**" />
+    <Content Remove="ControllerHandler\**" />
+    <Content Remove="Model\**" />
+    <EmbeddedResource Remove="Common\**" />
+    <EmbeddedResource Remove="ControllerHandler\**" />
+    <EmbeddedResource Remove="Model\**" />
+    <None Remove="Common\**" />
+    <None Remove="ControllerHandler\**" />
+    <None Remove="Model\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -17,6 +32,10 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BussinessLayer\BussinessLayer.csproj" />
   </ItemGroup>
 
 </Project>

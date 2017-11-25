@@ -4844,6 +4844,19 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "BussinessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "NEST": "5.5.0"
+        },
+        "compile": {
+          "bin/placeholder/BussinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BussinessLayer.dll": {}
+        }
       }
     }
   },
@@ -12703,10 +12716,16 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "BussinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../../BussinessLayer/BussinessLayer.csproj",
+      "msbuildProject": "../../BussinessLayer/BussinessLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "BussinessLayer >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.NETCore.App >= 2.0.0",
       "NEST >= 5.5.0",
@@ -12746,7 +12765,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projects\\NetCore\\BussinessLayer\\BussinessLayer.csproj": {
+              "projectPath": "D:\\Projects\\NetCore\\BussinessLayer\\BussinessLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
