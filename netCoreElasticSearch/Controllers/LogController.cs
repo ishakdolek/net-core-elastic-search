@@ -28,24 +28,12 @@ namespace netCoreElasticSearch.Controllers
         {
             _logControllerHandler = logControllerHandler;
         }
-        
+
         // GET api/values
         [HttpGet]
-        public async Task<List<string>> GetAllErrors()
+        public List<LogModel> GetAllErrors()
         {
-            _logControllerHandler.GetLogListModel("Aaa");
-            var response = await ElasticClient.SearchAsync<LogModel>(p => p
-                //.Source(f=>f.Includes(p2=>p2.Field(f2=>f2.message)))  
-                .Query(q => q
-                    .MatchAll()
-                )
-            );
-            var result = new List<string>();
-            foreach (var document in response.Documents)
-            {
-                result.Add(document.Message);
-            }
-            return result.Distinct().ToList();
+            return _logControllerHandler.GetLogAll().Value;
         }
 
         // GET api/values/5
@@ -53,44 +41,19 @@ namespace netCoreElasticSearch.Controllers
         public string Get(int id)
         {
             return "value";
+        } 
+        
+        // GET api/values/5
+        [HttpGet("{input}")]
+        public ResultModel<List<LogModel>> Get(string input)
+        {
+            return _logControllerHandler.GetLogListModel(input);
         }
 
         // POST api/values
         [HttpPost]
         public ResultModel<bool> InsertLog([FromBody] LogModel  log)
         {
-            //elasticClient.DeleteIndex("log_history");
-
-            //if (!ElasticClient.IndexExists("error_log").Exists)
-            //{
-            //    var indexSettings = new IndexSettings
-            //    {
-            //        NumberOfReplicas = 1,
-            //        NumberOfShards = 3
-            //    };
-
-
-            //    var createIndexDescriptor = new CreateIndexDescriptor("log_history")
-            //        .Mappings(ms => ms
-            //            .Map<LogModel>(m => m.AutoMap())
-            //        )
-            //        .InitializeUsing(new IndexState() { Settings = indexSettings })
-            //        .Aliases(a => a.Alias("error_log"));
-
-            //    var response = ElasticClient.CreateIndex(createIndexDescriptor);
-
-
-            //}
-            ////Insert Data           
-
-            //ElasticClient.Index<LogModel>(log, idx => idx.Index(Constant.IndexName));
-
-            //return new ResultModel<bool>
-            //{
-            //    Value = true,
-            //    IsSuccess = true
-            //};
-
             return _logControllerHandler.InsertLog(log);
         }
 
@@ -99,9 +62,6 @@ namespace netCoreElasticSearch.Controllers
         public void Put(int id, [FromBody]string value)
         {
         }
-
-     
-
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
