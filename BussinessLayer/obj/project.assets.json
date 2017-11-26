@@ -3477,11 +3477,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Projects\\NetCore\\BussinessLayer\\BussinessLayer.csproj",
+      "projectUniqueName": "D:\\Projects\\NetCore\\netCoreElasticSearch\\BussinessLayer\\BussinessLayer.csproj",
       "projectName": "BussinessLayer",
-      "projectPath": "D:\\Projects\\NetCore\\BussinessLayer\\BussinessLayer.csproj",
+      "projectPath": "D:\\Projects\\NetCore\\netCoreElasticSearch\\BussinessLayer\\BussinessLayer.csproj",
       "packagesPath": "C:\\Users\\ishak\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\NetCore\\BussinessLayer\\obj\\",
+      "outputPath": "D:\\Projects\\NetCore\\netCoreElasticSearch\\BussinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

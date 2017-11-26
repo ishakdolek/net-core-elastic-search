@@ -12719,8 +12719,8 @@
     },
     "BussinessLayer/1.0.0": {
       "type": "project",
-      "path": "../../BussinessLayer/BussinessLayer.csproj",
-      "msbuildProject": "../../BussinessLayer/BussinessLayer.csproj"
+      "path": "../BussinessLayer/BussinessLayer.csproj",
+      "msbuildProject": "../BussinessLayer/BussinessLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12766,8 +12766,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Projects\\NetCore\\BussinessLayer\\BussinessLayer.csproj": {
-              "projectPath": "D:\\Projects\\NetCore\\BussinessLayer\\BussinessLayer.csproj"
+            "D:\\Projects\\NetCore\\netCoreElasticSearch\\BussinessLayer\\BussinessLayer.csproj": {
+              "projectPath": "D:\\Projects\\NetCore\\netCoreElasticSearch\\BussinessLayer\\BussinessLayer.csproj"
             }
           }
         }
