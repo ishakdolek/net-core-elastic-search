@@ -15,15 +15,6 @@ namespace netCoreElasticSearch.Controllers
     {
         private readonly ILogControllerHandler _logControllerHandler;
 
-        private static readonly ConnectionSettings connSettings =
-            new ConnectionSettings(new Uri("http://localhost:9200"))
-                .DefaultIndex(Constant.IndexName)
-                //Optionally override the default index for specific types
-                .MapDefaultTypeIndices(m => m
-                    .Add(typeof(LogModel), Constant.IndexName));
-        private static readonly ElasticClient ElasticClient = new ElasticClient(connSettings);
-
-
         public LogController(ILogControllerHandler logControllerHandler)
         {
             _logControllerHandler = logControllerHandler;
@@ -41,8 +32,8 @@ namespace netCoreElasticSearch.Controllers
         public string Get(int id)
         {
             return "value";
-        } 
-        
+        }
+
         // GET api/values/5
         [HttpGet("{input}")]
         public ResultModel<List<LogModel>> Get(string input)
@@ -52,7 +43,7 @@ namespace netCoreElasticSearch.Controllers
 
         // POST api/values
         [HttpPost]
-        public ResultModel<bool> InsertLog([FromBody] LogModel  log)
+        public ResultModel<bool> InsertLog([FromBody] LogModel log)
         {
             return _logControllerHandler.InsertLog(log);
         }
