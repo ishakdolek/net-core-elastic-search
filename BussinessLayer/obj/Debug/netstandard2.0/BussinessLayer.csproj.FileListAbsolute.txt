@@ -1,0 +1,10 @@
+D:\Projects\NetCore\BussinessLayer\bin\Debug\netstandard2.0\BussinessLayer.deps.json
+D:\Projects\NetCore\BussinessLayer\bin\Debug\netstandard2.0\BussinessLayer.dll
+D:\Projects\NetCore\BussinessLayer\bin\Debug\netstandard2.0\BussinessLayer.pdb
+D:\Projects\NetCore\BussinessLayer\bin\Debug\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Projects\NetCore\BussinessLayer\bin\Debug\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Projects\NetCore\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.csproj.CoreCompileInputs.cache
+D:\Projects\NetCore\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.AssemblyInfoInputs.cache
+D:\Projects\NetCore\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.AssemblyInfo.cs
+D:\Projects\NetCore\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.dll
+D:\Projects\NetCore\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.pdb
