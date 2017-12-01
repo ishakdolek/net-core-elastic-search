@@ -1,0 +1,14 @@
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\bin\netcoreapp2.0\nlog.config
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\bin\netcoreapp2.0\elasticSearch.WebApi.deps.json
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\bin\netcoreapp2.0\elasticSearch.WebApi.runtimeconfig.json
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\bin\netcoreapp2.0\elasticSearch.WebApi.runtimeconfig.dev.json
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\bin\netcoreapp2.0\elasticSearch.WebApi.dll
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\bin\netcoreapp2.0\elasticSearch.WebApi.pdb
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\bin\netcoreapp2.0\elasticSearch.BussinessLayer.dll
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\bin\netcoreapp2.0\elasticSearch.BussinessLayer.pdb
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\obj\Debug\netcoreapp2.0\elasticSearch.WebApi.csprojResolveAssemblyReference.cache
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\obj\Debug\netcoreapp2.0\elasticSearch.WebApi.csproj.CoreCompileInputs.cache
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\obj\Debug\netcoreapp2.0\elasticSearch.WebApi.AssemblyInfoInputs.cache
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\obj\Debug\netcoreapp2.0\elasticSearch.WebApi.AssemblyInfo.cs
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\obj\Debug\netcoreapp2.0\elasticSearch.WebApi.dll
+D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch\obj\Debug\netcoreapp2.0\elasticSearch.WebApi.pdb

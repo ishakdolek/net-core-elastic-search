@@ -1,0 +1,11 @@
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\bin\netstandard2.0\elasticSearch.BussinessLayer.deps.json
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\bin\netstandard2.0\elasticSearch.BussinessLayer.dll
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\bin\netstandard2.0\elasticSearch.BussinessLayer.pdb
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\bin\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\bin\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\obj\Debug\netstandard2.0\elasticSearch.BussinessLayer.csproj.CoreCompileInputs.cache
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\obj\Debug\netstandard2.0\elasticSearch.BussinessLayer.AssemblyInfoInputs.cache
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\obj\Debug\netstandard2.0\elasticSearch.BussinessLayer.AssemblyInfo.cs
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\obj\Debug\netstandard2.0\elasticSearch.BussinessLayer.dll
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\obj\Debug\netstandard2.0\elasticSearch.BussinessLayer.pdb
+D:\Projects\NetCore\netCoreElasticSearch\BussinessLayer\obj\Debug\netstandard2.0\elasticSearch.BussinessLayer.csprojResolveAssemblyReference.cache

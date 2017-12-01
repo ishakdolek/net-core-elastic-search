@@ -1,17 +1,20 @@
-﻿using BussinessLayer.ControllerHandler;
+﻿using Castle.Windsor;
+using elasticSearch.BussinessLayer.CastleInstaller;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 
-
-namespace netCoreElasticSearch
+namespace elasticSearch.WebApi
 {
     public class Startup
     {
+        private IWindsorContainer _container;
+
         public Startup(IConfiguration configuration)
         {
+
             Configuration = configuration;
         }
 
@@ -22,15 +25,14 @@ namespace netCoreElasticSearch
         {
             services.AddSingleton(Configuration);
             services.AddMvc();
-
-            services.AddTransient<ILogControllerHandler,LogControllerHandler>();
+            _container = new WindsorContainer();
+            _container.Install(new BusinessLayerInstaller());
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             });
-
-
-        }
+         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -39,18 +41,15 @@ namespace netCoreElasticSearch
             {
                 app.UseDeveloperExceptionPage();
             }
-
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
-  
+
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
-
-
 
             app.UseMvc();
         }

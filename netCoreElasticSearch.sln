@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "netCoreElasticSearch", "netCoreElasticSearch\netCoreElasticSearch.csproj", "{A04EF461-658C-4B00-90EF-782CE25FE627}"
-EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1CA9D1E4-7582-42B4-B7FB-39F0F444B681}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BussinessLayer", "BussinessLayer\BussinessLayer.csproj", "{F5E61A55-60F9-4DE1-87B3-C6BA3CFBD612}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "elasticSearch.BussinessLayer", "BussinessLayer\elasticSearch.BussinessLayer.csproj", "{F5E61A55-60F9-4DE1-87B3-C6BA3CFBD612}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "elasticSearch.WebApi", "netCoreElasticSearch\elasticSearch.WebApi.csproj", "{83A89711-DEFE-4A1F-981E-F294A884877B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A04EF461-658C-4B00-90EF-782CE25FE627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A04EF461-658C-4B00-90EF-782CE25FE627}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A04EF461-658C-4B00-90EF-782CE25FE627}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A04EF461-658C-4B00-90EF-782CE25FE627}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1CA9D1E4-7582-42B4-B7FB-39F0F444B681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1CA9D1E4-7582-42B4-B7FB-39F0F444B681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CA9D1E4-7582-42B4-B7FB-39F0F444B681}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{F5E61A55-60F9-4DE1-87B3-C6BA3CFBD612}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5E61A55-60F9-4DE1-87B3-C6BA3CFBD612}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5E61A55-60F9-4DE1-87B3-C6BA3CFBD612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A89711-DEFE-4A1F-981E-F294A884877B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A89711-DEFE-4A1F-981E-F294A884877B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A89711-DEFE-4A1F-981E-F294A884877B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A89711-DEFE-4A1F-981E-F294A884877B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

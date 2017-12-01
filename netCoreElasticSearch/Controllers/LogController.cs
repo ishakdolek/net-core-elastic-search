@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BussinessLayer.Common;
-using BussinessLayer.ControllerHandler;
+﻿using System.Collections.Generic;
+using elasticSearch.BussinessLayer.Common;
+using elasticSearch.BussinessLayer.ControllerHandler;
+using elasticSearch.BussinessLayer.Model;
 using Microsoft.AspNetCore.Mvc;
-using netCoreElasticSearch.Model;
-using Nest;
 
-namespace netCoreElasticSearch.Controllers
+namespace elasticSearch.WebApi.Controllers
 {
     [Route("api/[controller]")]
     public class LogController : Controller
     {
         private readonly ILogControllerHandler _logControllerHandler;
+
 
         public LogController(ILogControllerHandler logControllerHandler)
         {
@@ -38,6 +35,7 @@ namespace netCoreElasticSearch.Controllers
         [HttpGet("{input}")]
         public ResultModel<List<LogModel>> Get(string input)
         {
+            //_logger.Info("Başladı....");
             return _logControllerHandler.GetLogListModel(input);
         }
 
@@ -45,6 +43,7 @@ namespace netCoreElasticSearch.Controllers
         [HttpPost]
         public ResultModel<bool> InsertLog([FromBody] LogModel log)
         {
+            //_logger.Info("Bitti");
             return _logControllerHandler.InsertLog(log);
         }
 

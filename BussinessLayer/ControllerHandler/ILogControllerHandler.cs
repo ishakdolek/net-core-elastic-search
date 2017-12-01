@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using BussinessLayer.Common;
-using netCoreElasticSearch.Model;
+using elasticSearch.BussinessLayer.Common;
+using elasticSearch.BussinessLayer.Model;
 
-namespace BussinessLayer.ControllerHandler
+namespace elasticSearch.BussinessLayer.ControllerHandler
 {
     public interface ILogControllerHandler
     {

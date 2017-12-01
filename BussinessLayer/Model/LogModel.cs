@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace netCoreElasticSearch.Model
+namespace elasticSearch.BussinessLayer.Model
 {
     public class LogModel
     {

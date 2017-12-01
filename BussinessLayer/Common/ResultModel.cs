@@ -1,4 +1,4 @@
-﻿namespace BussinessLayer.Common
+﻿namespace elasticSearch.BussinessLayer.Common
 {
     public class ResultModel<T>
     {
