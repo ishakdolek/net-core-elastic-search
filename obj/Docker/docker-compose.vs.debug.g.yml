@@ -9,16 +9,15 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_PACKAGES=C:\.nuget\packages
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_netcoreelasticsearch$
     volumes:
-      - D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch:C:\app
+      - D:\Projects\NetCore\elasticSearch\netCoreElasticSearch:C:\app
       - C:\Users\ishak\onecoremsvsmon\15.0.26919.1:C:\remote_debugger:ro
-      - C:\Users\ishak\.nuget\packages\:C:\.nuget\packages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
-
+      #- $nuget_user_folder_netcoreelasticsearch$:C:\.nuget\packages:ro
+#$nuget_fallback_packages_volume_mapping_netcoreelasticsearch$
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages  bin\\netcoreapp2.0\\elasticSearch.WebApi.dll"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_netcoreelasticsearch$ bin\\netcoreapp2.0\\elasticSearch.WebApi.dll"
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"

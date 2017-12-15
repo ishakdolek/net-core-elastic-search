@@ -10,7 +10,7 @@ namespace elasticSearch.BussinessLayer.ControllerHandler
 {
     public class LogControllerHandler : ILogControllerHandler
     {
-        private readonly ILogger _logger;
+    
 
         private static readonly ConnectionSettings connSettings =
             new ConnectionSettings(new Uri("http://localhost:9200"))
@@ -20,13 +20,10 @@ namespace elasticSearch.BussinessLayer.ControllerHandler
                     .Add(typeof(LogModel), Constant.IndexName));
         private static readonly ElasticClient ElasticClient = new ElasticClient(connSettings);
 
-        public LogControllerHandler(ILogger logger)
-        {
-            _logger = logger;
-        }
+      
         public ResultModel<List<LogModel>> GetLogListModel(string input)
         {
-            _logger.Info("Test...");
+         
             var result = new ResultModel<List<LogModel>>
             {
                 Value = new List<LogModel>()

@@ -7,7 +7,7 @@ services:
     build:
       args:
         source: obj/Docker/empty/
-      context: D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch
+      context: D:\Projects\NetCore\elasticSearch\netCoreElasticSearch
       dockerfile: Dockerfile
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus
       /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646
@@ -24,6 +24,6 @@ services:
     ports:
     - 80/tcp
     volumes:
-    - D:\Projects\NetCore\netCoreElasticSearch\netCoreElasticSearch:C:\app:rw
+    - D:\Projects\NetCore\elasticSearch\netCoreElasticSearch:C:\app:rw
     - C:\Users\ishak\onecoremsvsmon\15.0.26919.1:C:\remote_debugger:ro
 version: '3.0'
